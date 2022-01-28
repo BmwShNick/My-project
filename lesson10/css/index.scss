@@ -47,6 +47,10 @@ body {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 107px;
+		@media screen and (max-width: 480px) {
+			margin: 40px;
+		}
+
 		&_content {
 			font-family: Josefin Sans;
 			font-size: 14px;
@@ -84,6 +88,7 @@ body {
 		align-items: center;
 		flex-direction: column;
 		margin-bottom: 142px;
+
 		&_text {
 			width: 123px;
 			height: 26px;
@@ -106,7 +111,6 @@ body {
 		font-family: Josefin Sans;
 		font-weight: bold;
 		font-size: 24px;
-		line-height: 26px;
 		color: #ffffff;
 	}
 	&_navigation {
@@ -116,12 +120,17 @@ body {
 			list-style-type: none;
 			font-family: Aleo;
 			font-size: 14px;
-			line-height: 26px;
 			color: #ffffff;
 			margin-right: 14px;
 			width: 148px;
 			height: 26px;
 			text-transform: uppercase;
+			@media screen and (max-width: 480px) {
+				font-size: 12px;
+				width: 50px;
+				height: 15px;
+				margin-left: 4px;
+			}
 			&:hover {
 				transition: 1s;
 				font-size: 15px;
@@ -142,6 +151,9 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
+	@media screen and (max-width: 480px) {
+		flex-direction: column;
+	}
 	&_content {
 		display: flex;
 		flex-direction: column;
@@ -149,9 +161,12 @@ body {
 			margin-bottom: 50px;
 			font-family: Aleo;
 			font-size: 36px;
-			line-height: 26px;
 			color: #ffffff;
 			text-shadow: 1px 2px 40px rgb(112, 114, 233);
+			@media screen and (max-width: 480px) {
+				margin-top: 260px;
+				margin-bottom: 35px;
+			}
 		}
 		&_txt {
 			font-family: Josefin Sans;
@@ -162,6 +177,11 @@ body {
 			letter-spacing: 1.6px;
 			color: #ffffff;
 			margin-bottom: 45px;
+			@media screen and (max-width: 480px) {
+				text-align: center;
+				width: 220px;
+				margin-bottom: 20px;
+			}
 		}
 	}
 	&_btn {
@@ -209,10 +229,23 @@ body {
 		display: flex;
 		flex-direction: column;
 		margin-left: 110px;
+		@media screen and (max-width: 480px) {
+			display: flex;
+			justify-content: center;
+			margin-top: 45px;
+			margin-bottom: 145px;
+			margin-left: 0;
+		}
+
 		&_lake {
 			height: 220px;
 			width: 350px;
 			margin-bottom: 10px;
+			@media screen and (max-width: 480px) {
+				width: 290px;
+				height: 210px;
+				margin: 0;
+			}
 			&:hover {
 				box-shadow: -1px -1px 10px 3px #5474fd;
 				transform: scale(1.07);
@@ -223,6 +256,12 @@ body {
 			height: 220px;
 			width: 350px;
 			margin-left: 90px;
+			@media screen and (max-width: 480px) {
+				width: 290px;
+				height: 210px;
+				margin: 0;
+			}
+
 			&:hover {
 				box-shadow: -1px -1px 12px 3px #5474fd;
 				transform: scale(1.1);
@@ -233,18 +272,17 @@ body {
 	}
 }
 
-@media only screen and (max-width: 480px) {
-	.choose-us {
-		width: 320px;
-	}
-}
-
 .my_icons {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 338px;
 	background: #333333;
+	@media screen and (max-width: 480px) {
+		display: flex;
+		flex-direction: column;
+		padding: 200px;
+	}
 	&_cntnt {
 		display: flex;
 		align-items: center;
@@ -253,6 +291,7 @@ body {
 			display: flex;
 			width: 60px;
 			margin-bottom: 20px;
+
 			&:hover {
 				transform: scale(1.2);
 				transition-duration: 1s;
@@ -266,6 +305,9 @@ body {
 			text-align: center;
 			width: 242px;
 			color: #e8e8e8;
+			@media screen and (max-width: 480px) {
+				margin-bottom: 65px;
+			}
 
 			&:hover {
 				transition: 1s;
@@ -275,6 +317,9 @@ body {
 		&:nth-child(2) {
 			margin-right: 143px;
 			margin-left: 143px;
+			@media screen and (max-width: 480px) {
+				margin: 0;
+			}
 			.my_icons_cntnt_search_img {
 				&:hover {
 					transform: scale(1.2);
@@ -299,6 +344,10 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
+	@media screen and (max-width: 480px) {
+		display: flex;
+		align-items: center;
+	}
 	&_container {
 		animation-name: jump-container;
 		animation-duration: 2s;
@@ -309,6 +358,11 @@ body {
 		opacity: 0.9;
 		margin-left: 330px;
 		margin-bottom: 100px;
+		@media screen and (max-width: 480px) {
+			width: 462px;
+			margin: 0;
+			padding: 0;
+		}
 		&:hover {
 			box-shadow: -3px -3px 23px 3px #ec9797;
 			transition: 2s;
@@ -324,6 +378,11 @@ body {
 			padding-bottom: 23px;
 			text-shadow: 2px -2px 9px #ec9797;
 			color: #e8e8e8;
+			@media screen and (max-width: 480px) {
+				padding-top: 33px;
+				padding-left: 30px;
+				padding-bottom: 13px;
+			}
 		}
 		&_spain_madrid {
 			width: 241px;
@@ -336,17 +395,21 @@ body {
 			padding-bottom: 14px;
 			padding-left: 32px;
 			color: #ffffff;
+			@media screen and (max-width: 480px) {
+				padding-left: 30px;
+			}
 		}
 		&_txt {
-			width: 508px;
-			height: 78px;
 			font-family: Josefin Sans;
-			font-style: normal;
-			font-weight: normal;
 			font-size: 16px;
 			padding-left: 32px;
 			padding-bottom: 46px;
 			color: #e8e8e8;
+			@media screen and (max-width: 480px) {
+				padding-top: 23px;
+				padding-left: 30px;
+				padding-bottom: 35px;
+			}
 		}
 		&_btn {
 			margin-left: 32px;
@@ -389,6 +452,10 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
+	@media screen and (max-width: 480px) {
+		display: flex;
+		align-items: center;
+	}
 	&_container {
 		animation-name: jump-container;
 		animation-duration: 2s;
@@ -399,6 +466,11 @@ body {
 		opacity: 0.9;
 		margin-right: 330px;
 		margin-bottom: 100px;
+		@media screen and (max-width: 480px) {
+			width: 462px;
+			margin: 0;
+			padding: 0;
+		}
 		&:hover {
 			box-shadow: -3px -3px 23px 3px #ec9797;
 			transition: 2s;
@@ -414,6 +486,11 @@ body {
 			padding-bottom: 23px;
 			text-shadow: 2px -2px 5px rgb(112, 114, 233);
 			color: #e8e8e8;
+			@media screen and (max-width: 480px) {
+				padding-top: 33px;
+				padding-left: 30px;
+				padding-bottom: 13px;
+			}
 		}
 		&_spain_madrid {
 			width: 241px;
@@ -426,17 +503,21 @@ body {
 			padding-bottom: 14px;
 			padding-left: 32px;
 			color: #ffffff;
+			@media screen and (max-width: 480px) {
+				padding-left: 30px;
+			}
 		}
 		&_txt {
-			width: 508px;
-			height: 78px;
 			font-family: Josefin Sans;
-			font-style: normal;
-			font-weight: normal;
 			font-size: 16px;
 			padding-left: 32px;
 			padding-bottom: 46px;
 			color: #e8e8e8;
+			@media screen and (max-width: 480px) {
+				padding-top: 23px;
+				padding-left: 30px;
+				padding-bottom: 35px;
+			}
 		}
 	}
 	&_btn {
@@ -479,6 +560,7 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
+
 	&_title {
 		height: 26px;
 		font-family: Aleo;
@@ -493,6 +575,10 @@ body {
 			animation-duration: 2s;
 			display: flex;
 			justify-content: center;
+			@media screen and (max-width: 480px) {
+				display: flex;
+				flex-direction: column;
+			}
 			&_human_img {
 				&:hover {
 					transform: scale(1.1);
@@ -506,6 +592,11 @@ body {
 		width: 668px;
 		height: 287px;
 		background: #333333;
+		@media screen and (max-width: 480px) {
+			width: 462px;
+			margin: 0;
+		}
+
 		&:hover {
 			box-shadow: -1px -1px 23px 1px #ec9797;
 			transition: 2s;
@@ -521,6 +612,10 @@ body {
 			text-transform: uppercase;
 			color: #fefefe;
 			text-shadow: 2px -1px 4px #ec9797;
+			@media screen and (max-width: 480px) {
+				margin-top: 25px;
+				margin-left: 35px;
+			}
 		}
 		&_body_txt {
 			margin-top: 49px;
@@ -528,12 +623,15 @@ body {
 			width: 581px;
 			height: 165px;
 			font-family: Josefin Sans;
-			font-style: normal;
-			font-weight: normal;
 			font-size: 16px;
-			line-height: 19px;
 			letter-spacing: 2.52px;
 			color: #fefefe;
+			@media screen and (max-width: 480px) {
+				margin-top: 25px;
+				margin-left: 35px;
+				width: 400px;
+				letter-spacing: 1.3px;
+			}
 		}
 	}
 }

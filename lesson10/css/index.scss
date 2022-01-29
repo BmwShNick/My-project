@@ -107,6 +107,7 @@ body {
 	align-items: center;
 	background-color: #5474fd;
 	height: 83px;
+
 	&_info_bhromaon {
 		font-family: Josefin Sans;
 		font-weight: bold;
@@ -116,6 +117,7 @@ body {
 	&_navigation {
 		display: flex;
 		list-style-type: none;
+
 		&_nav {
 			list-style-type: none;
 			font-family: Aleo;
